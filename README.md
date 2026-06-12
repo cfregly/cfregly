@@ -17,4 +17,4 @@ One repo per stage of the startup lifecycle, every number reproducible:
 
 ### Elsewhere
 
-3× O'Reilly author · ~500K DeepLearning.AI learners (*Generative AI with LLMs*: 437K+ enrolled) · 100K meetup members across 20 AI Performance Engineer groups worldwide · [~96K-subscriber newsletter] · [YouTube: @AIPerformanceEngineering](https://youtube.com/@AIPerformanceEngineering)
+3× O'Reilly author · ~500K DeepLearning.AI learners (*Generative AI with LLMs*: 437K+ enrolled) · 100K meetup members across 20 AI Performance Engineer groups worldwide · [100K-subscriber newsletter] · [YouTube: @AIPerformanceEngineering](https://youtube.com/@AIPerformanceEngineering)
