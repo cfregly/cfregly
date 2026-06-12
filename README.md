@@ -1,6 +1,6 @@
 ## Chris Fregly
 
-AI startup founder & advisor · ex-AWS, Databricks, Netflix · 3× O'Reilly author · ~500K course learners
+AI startup founder & advisor · ex-AWS, Databricks, Netflix · 3× O'Reilly author · ~500K DeepLearning.AI learners
 
 I turn founder trust into working code and measured activation. Strategic and hands-on. Two hires for the price of one.
 
