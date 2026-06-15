@@ -19,7 +19,7 @@ One repo per stage of the journey I run with founders, every number reproducible
 | Operate the loop | [claude-operator-loop](https://github.com/cfregly/claude-operator-loop) | Activation readout → a gated plan and a morning report. Measurement runs unattended, the nudge and the GTM handoff wait for approval, and a CI audit proves nothing outward-facing auto-ran |
 | Tune performance | [claude-perf-tune](https://github.com/cfregly/claude-perf-tune) | 31 GPU-inference profiling and optimization skills with a bundled MCP server. The cost-of-intelligence work, measured not asserted |
 
-Every repo runs its headline result in one command: clone, then `make demo`, no API key needed. Each ships a `CLAUDE.md` so an agent can run and extend it.
+Every repo runs its headline result in one command: clone, then `make demo`, no API key needed. Each ships a `CLAUDE.md` so an agent can run and extend it. Every repo also uses the Claude Developer Platform: an optional `claude-opus-4-8` layer drafts the founder message, proposes the next experiment, and judges the prose on top of the deterministic gate, falling back to the gate with no key. Determinism on the gate, Claude on the draft.
 
 The seven lifecycle repos each install as a Claude Skill: upload it in Claude (Settings > Capabilities > Skills) and say the trigger phrase, no clone required.
 
