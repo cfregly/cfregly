@@ -4,40 +4,50 @@ AI startup founder & advisor · ex-AWS, Databricks, Netflix · 3× O'Reilly auth
 
 I turn founder trust into working code, measured activation, and retention. Strategic and hands-on. Two hires for the price of one.
 
-### Two product lines: what founders build with, and how I measure it
+### The Founder's Playbook, as runnable tools
 
-Nine public repos, split by who runs them. Every number reproducible and CI-gated.
+Anthropic's Founder's Playbook tells a founder what to do at each stage and ships no tool. These six repos are the runnable, forkable per-stage tool, one per stage plus two disciplines that run at every stage. The playbook prescribes the measurement framework and the weekly metrics brief but ships no instrumentation, which is what claude-startup-launch is. Every number reproducible and CI-gated.
 
-**Founder Kit**, what a founder runs on their own company:
+**Idea**, validate before you build (and raise):
 
-| Stage | Repo | What it proves (measured) |
-|---|---|---|
-| Diagnose the company | [claude-startup-linter](https://github.com/cfregly/claude-startup-linter) | Pitch in → PMF path, the platform-risk answer (why not the frontier labs or the cloud), and the Relationship → Activation → Retention loop, weakest stage first |
-| Build the product | [claude-prompt-to-production](https://github.com/cfregly/claude-prompt-to-production) | First Claude call → tools → evals 8/8 → cost $0.22 to $0.03 live (−86%) → MCP |
-| Harden the agent | [claude-agent-linter](https://github.com/cfregly/claude-agent-linter) | Vague MCP server 14 → 100, CI-gated, plus an OWASP/STRIDE security lens. Caught my own demo server at 77 |
-| Build the raise | [claude-pitch-deck-linter](https://github.com/cfregly/claude-pitch-deck-linter) | Sequoia-arc deck builder + linter. Sloppy 0/100 fails CI, sharp 100/100 |
+| Repo | What it proves (measured) |
+|---|---|
+| [claude-startup-idea](https://github.com/cfregly/claude-startup-idea) | Pitch in → PMF path, the platform-risk answer (why not the frontier labs or the cloud), the Relationship → Activation → Retention loop weakest stage first, and a Sequoia-arc deck builder + linter for the raise. Sloppy deck 0/100 fails CI, sharp 100/100 |
 
-**Activation System**, what I run on a founder cohort to make activation measurable and attributable:
+**MVP**, build, then a security review before any user:
 
-| Stage | Repo | What it proves (measured) |
-|---|---|---|
-| Capture the events | [claude-activation-instrument](https://github.com/cfregly/claude-activation-instrument) | Records developer activation events on one durable org_id, backends local JSONL, PostHog, Statsig, or Amplitude (PostHog and Amplitude verified live). The eleven adoption questions as logical retrievals, feeding the activation loop |
-| Measure the activation | [claude-activation-loop](https://github.com/cfregly/claude-activation-loop) | Founder cohort → funnel, time-to-second-build, leaky-bucket flag, and the product-qualified accounts ready for a GTM handoff. Activation as attributable code |
-| Operate the loop (capstone) | [claude-operator-loop](https://github.com/cfregly/claude-operator-loop) | Activation readout → a gated plan and a morning report. Measurement runs unattended, the nudge and the GTM handoff wait for approval, and a CI audit proves nothing outward-facing auto-ran |
+| Repo | What it proves (measured) |
+|---|---|
+| [claude-startup-mvp](https://github.com/cfregly/claude-startup-mvp) | First Claude call → tools → evals 8/8 → cost $0.22 to $0.03 live (−86%) → MCP, then a security review that takes a vague MCP server 14 → 100, CI-gated, with an OWASP/STRIDE lens. Caught my own demo server at 77 |
 
-The pinned six are three from each line: three tools I give founders (diagnose, build, harden) and three I measure them with (capture, measure, operate).
+**Launch**, turn traction into a growth engine that runs without founder bottlenecks:
 
-Every repo runs its headline result in one command and ships a `CLAUDE.md` so an agent can run and extend it. Every repo runs on the Claude Developer Platform: `claude-opus-4-8` does the generative work every run, drafting the founder message, writing the activation brief, diagnosing the company, rewriting the worst tool, and proposing the next experiment. A deterministic gate verifies that output and reproduces in CI: Claude does the judgment, the gate proves it.
+| Repo | What it proves (measured) |
+|---|---|
+| [claude-startup-launch](https://github.com/cfregly/claude-startup-launch) | Capture developer activation events on one durable org_id (local JSONL, PostHog, Statsig, or Amplitude), measure the funnel, time-to-second-build, and the leaky-bucket flag, surface the product-qualified accounts ready for a GTM handoff, and run the gated weekly report on a schedule. Capture, measure, and operate as one system. The meaning underneath is Relationship → Activation → Retention |
 
-The seven repos in the two lines each install as a Claude Skill: upload it in Claude (Settings > Capabilities > Skills) and say the trigger phrase, no clone required.
+**Scale**, the GTM function and the compound-data moat:
 
-Two shared disciplines run under both lines. **Quality**, **[claude-deslop](https://github.com/cfregly/claude-deslop)**, the credibility gate: one synced ruleset keeps AI tells (em-dashes, buzzwords, the generated look) out of every repo above, this profile, my deck, and my resume. They all pass it. **Cost**, **[claude-perf-tune](https://github.com/cfregly/claude-perf-tune)**, the cost-of-intelligence specialist: 31 GPU-inference profiling and optimization skills with a bundled MCP server, measured not asserted.
+| Repo | What it proves (measured) |
+|---|---|
+| [claude-startup-scale](https://github.com/cfregly/claude-startup-scale) | The same loop at cohort scale: product-qualified accounts handed to a named GTM owner with week-over-week deltas and a gated handoff, plus the compound-data moat that grows with each cohort. The meaning underneath is Relationship → Activation → Retention |
+
+**Every stage**, the quality gate and the cost gate:
+
+| Repo | What it proves (measured) |
+|---|---|
+| [claude-deslop](https://github.com/cfregly/claude-deslop) | One synced ruleset keeps AI tells (em-dashes, buzzwords, the generated look) out of every repo above, this profile, my deck, and my resume. They all pass it |
+| [claude-perf-tune](https://github.com/cfregly/claude-perf-tune) | 31 GPU-inference profiling and optimization skills with a bundled MCP server, the cost of intelligence at scale measured not asserted |
+
+Every repo runs its headline result in one command and ships a `CLAUDE.md` so an agent can run and extend it. Every repo runs on the Claude Developer Platform: `claude-opus-4-8` does the generative work every run, drafting the founder message, writing the activation brief, diagnosing the company, rewriting the worst tool, and proposing the next experiment. Those generative steps are mandatory and fail loud without a key. A deterministic gate verifies that output and reproduces in CI: Claude does the judgment, the gate proves it.
+
+Each repo installs as a Claude Skill: upload it in Claude (Settings > Capabilities > Skills) and say the trigger phrase, no clone required.
 
 ### The throughline
 
 I make the cost of intelligence legible (unit economics, caching, model routing, GPU tuning). I answer platform risk the way a founder who got AWS'd has to: own the data, the workflow, and the distribution, and ship MCP so nobody is locked in. And I measure everything: every claim above is a reproducible before/after, not an adjective.
 
-The spine: for an AI product, activation into retention is the growth problem that decides who survives, so the capture, measure, and operate repos ship that loop as runnable code, down to a gated morning report.
+The spine: for an AI product, activation into retention is the growth problem that decides who survives, so claude-startup-launch ships that loop as runnable code, from event capture through the funnel to a gated weekly report.
 
 ### Elsewhere
 
