@@ -37,9 +37,11 @@ Anthropic's Founder's Playbook tells a founder what to do at each stage and ship
 | Repo | What it proves (measured) |
 |---|---|
 | [claude-deslop](https://github.com/cfregly/claude-deslop) | One synced ruleset keeps AI tells (em-dashes, buzzwords, the generated look) out of every repo above, this profile, my deck, and my resume. They all pass it |
-| [claude-perf-tune](https://github.com/cfregly/claude-perf-tune) | 31 GPU-inference profiling and optimization skills with a bundled MCP server, the cost of intelligence at scale measured not asserted |
+| [claude-cost-control](https://github.com/cfregly/claude-cost-control) | The Claude platform cost levers in one place: prompt caching, context editing, tool search, programmatic tool calling, adaptive thinking, token counting, and Batches, each with its request shape and the savings read off the usage object |
 
-Every repo runs its headline result in one command and ships a `CLAUDE.md` so an agent can run and extend it. Every repo runs on the Claude Developer Platform: `claude-opus-4-8` does the generative work every run, drafting the founder message, writing the activation brief, diagnosing the company, rewriting the worst tool, and proposing the next experiment. Those generative steps are mandatory and fail loud without a key. A deterministic gate verifies that output and reproduces in CI: Claude does the judgment, the gate proves it.
+**Five standalone deep-dives are also public** (not pinned): claude-context-grounding (web search, fetch, citations, files), claude-io (structured outputs and the memory tool), claude-managed-agents (the full Managed Agents surface), claude-dreaming-loop (a memory-consolidation loop on GA primitives), and claude-perf-tune (GPU-inference cost, one layer below the API). Each runs in one command and ships a Skill.
+
+Every repo runs its headline result in one command and ships a `CLAUDE.md` so an agent can run and extend it. In the four stage repos the generative work is `claude-opus-4-8` on every real run, drafting the founder message, writing the activation brief, diagnosing the company, rewriting the worst tool, and proposing the next experiment, and those generative steps fail loud without a key. The two disciplines are the gates: claude-deslop is deterministic, and claude-cost-control runs every lever offline and reads the real saving off the usage object under `--live`. A deterministic gate verifies the output and reproduces in CI: Claude does the judgment, the gate proves it.
 
 Each repo installs as a Claude Skill: upload it in Claude (Settings > Capabilities > Skills) and say the trigger phrase, no clone required.
 
