@@ -27,7 +27,7 @@ Nine public repos, split by who runs them. Every number reproducible and CI-gate
 
 The pinned six are three from each line: three tools I give founders (diagnose, build, harden) and three I measure them with (capture, measure, operate).
 
-Every repo runs its headline result in one command: clone, then `make demo`, no API key needed. Each ships a `CLAUDE.md` so an agent can run and extend it. Every repo also uses the Claude Developer Platform: an optional `claude-opus-4-8` layer drafts the founder message, proposes the next experiment, and judges the prose on top of the deterministic gate, falling back to the gate with no key. Determinism on the gate, Claude on the draft.
+Every repo runs its headline result in one command and ships a `CLAUDE.md` so an agent can run and extend it. Every repo runs on the Claude Developer Platform: `claude-opus-4-8` does the generative work every run, drafting the founder message, writing the activation brief, diagnosing the company, rewriting the worst tool, and proposing the next experiment. A deterministic gate verifies that output and reproduces in CI: Claude does the judgment, the gate proves it.
 
 The seven repos in the two lines each install as a Claude Skill: upload it in Claude (Settings > Capabilities > Skills) and say the trigger phrase, no clone required.
 
