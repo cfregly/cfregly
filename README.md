@@ -19,7 +19,7 @@ Anthropic's Founder's Playbook tells a founder what to do at each stage and ship
 
 One clone, one `make demo`, idea to scale. Online-only: every demo is a real Claude call and fails fast without a key. The eight skills install from `.claude/skills/`.
 
-**Platform deep-dives, also public:** [claude-memory](https://github.com/cfregly/claude-memory) (the memory tool plus a dreaming consolidation loop on one backend), [claude-grounding](https://github.com/cfregly/claude-grounding) (web search, fetch, citations, files), [claude-managed-agents](https://github.com/cfregly/claude-managed-agents) (the Managed Agents surface), and claude-gpu-perf-tune (GPU-inference cost, one layer below the API). Each runs in one command and ships a Skill.
+**Platform deep-dives, also public:** [claude-memory](https://github.com/cfregly/claude-memory) (the memory tool plus a dreaming consolidation loop on one backend), [claude-grounding](https://github.com/cfregly/claude-grounding) (web search, fetch, citations, files), [claude-managed-agents](https://github.com/cfregly/claude-managed-agents) (the Managed Agents surface), [claude-parallel](https://github.com/cfregly/claude-parallel) (a bounded, measured fan-out of concurrent Claude calls), and claude-gpu-perf-tune (GPU-inference cost, one layer below the API). Each runs in one command and ships a Skill.
 
 Every demo runs Claude (`claude-opus-4-8` or the right rung of the ladder) on a real call and fails loud without a key. The deterministic gates (the de-slop rule score, the doc-correctness checks) reproduce in CI: Claude does the judgment, the gate proves it.
 
