@@ -1,36 +1,40 @@
 ## Chris Fregly
 
-AI startup founder & advisor · ex-AWS, Databricks, Netflix · 3× O'Reilly author · ~500K DeepLearning.AI learners
+Startup founder, operator, advisor · PipelineAI -> AWS/Databricks/Netflix · Claude startup activation · 3x O'Reilly author · ~500K DeepLearning.AI learners
 
-I turn founder trust into working code, measured activation, and retention. Strategic and hands-on.
+I help AI founders get from first Claude call to production activation: evals, cost control, security gates, and GTM handoff.
 
-### The Founder's Playbook, as one runnable kit
+### Start here: claude-founder-kit
 
-Anthropic's Founder's Playbook tells a founder what to do at each stage and ships no tool. **[claude-founder-kit](https://github.com/cfregly/claude-founder-kit)** is that tool: the whole journey in one repo, one `make demo`, every step a real Claude call.
+[claude-founder-kit](https://github.com/cfregly/claude-founder-kit) is one runnable repo for the founder path from first API call to activation and scale. One `make demo`, real Claude calls, and gates that fail loud without an API key.
 
-| Stage (module) | What it proves (measured) |
+| Stage | What it proves |
 |---|---|
-| `idea/` | Pitch in to a PMF path, the platform-risk answer (why not the frontier labs or the cloud), the Relationship to Activation to Retention loop weakest stage first, and a Sequoia-arc deck builder and linter. Sloppy deck 0/100 fails CI, sharp 100/100 |
-| `mvp/` | First Claude call, tools, evals, cost from 22 cents to 3 cents live (down 86%), MCP, then a security review that takes a vague MCP server 14 to 100 with an OWASP and STRIDE lens. Caught my own demo server at 77 |
-| `launch/` | Capture activation events on one durable org_id (local JSONL, PostHog, Statsig, or Amplitude), measure the funnel, time-to-second-build, and the leaky-bucket flag, surface the accounts ready for a GTM handoff, and run the gated weekly report on a schedule |
-| `scale/` | The same loop at cohort scale: product-qualified accounts handed to a named GTM owner with week-over-week deltas, plus the compound-data moat that grows with each cohort |
-| `quality/` | The de-slop linter every document in this repo, my deck, and my resume passes |
-| `cost/` | The Claude platform cost levers in one place: prompt caching, context editing, tool search, programmatic tool calling, adaptive thinking, token counting, and Batches, each read off the usage object |
+| `idea/` | Pitch in, PMF path out, platform-risk pressure test, and a deck builder with a linter gate |
+| `mvp/` | First Claude call, tools, evals, cost control, MCP, and a security review before users |
+| `launch/` | Activation events, funnel metrics, time-to-second-build, and GTM handoff signals |
+| `scale/` | Product-qualified accounts, cohort deltas, and the compound-data moat |
+| `quality/` | The de-slop gate every public artifact passes |
+| `cost/` | Prompt caching, context editing, tool search, programmatic tool calling, adaptive thinking, token counting, and Batches, each read from the usage object |
 
-One clone, one `make demo`, idea to scale. Online-only: every demo is a real Claude call and fails fast without a key. The eight skills install from `.claude/skills/`.
+### Systems depth
 
-**Platform deep-dives, also public:** [claude-memory](https://github.com/cfregly/claude-memory) (the memory tool plus a dreaming consolidation loop on one backend), [claude-grounding](https://github.com/cfregly/claude-grounding) (web search, fetch, citations, files), [claude-managed-agents](https://github.com/cfregly/claude-managed-agents) (the Managed Agents surface), [claude-parallel](https://github.com/cfregly/claude-parallel) (a bounded, measured fan-out of concurrent Claude calls), and [claude-gpu-perf-tune](https://github.com/cfregly/claude-gpu-perf-tune) (GPU-inference cost, one layer below the API). Each runs in one command and ships a Skill.
+[ai-performance-engineering](https://github.com/cfregly/ai-performance-engineering) is the broad systems layer: GPU inference, CUDA/PyTorch performance, model serving, and production AI cost/performance tradeoffs.
 
-Every demo runs a configured Claude model on a real call and fails loud without a key. The deterministic gates (the de-slop rule score, the doc-correctness checks) reproduce in CI: Claude does the judgment, the gate proves it.
+[claude-gpu-perf-tune](https://github.com/cfregly/claude-gpu-perf-tune) turns that performance work into Claude Code skills and MCP tools for GPU inference profiling, optimization, report generation, and value tracking.
 
-Each module installs as a Claude Skill: upload it in Claude (Settings > Capabilities > Skills) and say the trigger phrase, no clone required.
+### Claude platform proof
+
+[claude-feature-hits](https://github.com/cfregly/claude-feature-hits) keeps short, runnable Claude feature briefs with scoped preflights and saved output.
+
+[claude-memory](https://github.com/cfregly/claude-memory) shows the memory layer: durable facts, session-to-session learning, and a consolidation loop on one backend.
+
+[claude-managed-agents](https://github.com/cfregly/claude-managed-agents) covers the hosted agent surface: sessions, tools, outcomes, memory, and multi-agent orchestration.
 
 ### The throughline
 
-I make the cost of intelligence legible (unit economics, caching, model routing, GPU tuning). I answer platform risk the way a founder who got AWS'd has to: own the data, the workflow, and the distribution, and ship MCP so nobody is locked in. And I measure everything: every claim above is a reproducible before-and-after, not an adjective.
-
-The spine: for an AI product, activation into retention is the growth problem that decides who survives, so the kit's `launch` module ships that loop as runnable code, from event capture through the funnel to a gated weekly report.
+I built the founder side at PipelineAI, the operator side at AWS/Databricks/Netflix, and now the advisor side with AI startups. The throughline is the same: convert founder trust into working code, measured activation, and retention.
 
 ### Elsewhere
 
-3× O'Reilly author · ~500K DeepLearning.AI learners (*Generative AI with LLMs*: 437K+ enrolled) · 100K meetup members across 20 AI Performance Engineer groups worldwide · [YouTube: @AIPerformanceEngineering](https://youtube.com/@AIPerformanceEngineering)
+3x O'Reilly author · ~500K DeepLearning.AI learners (*Generative AI with LLMs*: 437K+ enrolled) · 100K meetup members across 20 AI Performance Engineer groups worldwide · [YouTube: @AIPerformanceEngineering](https://youtube.com/@AIPerformanceEngineering)
