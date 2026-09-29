@@ -7,7 +7,6 @@
   <a href="https://www.linkedin.com/in/cfregly"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="25"></a>
   <a href="https://www.youtube.com/@AIPerformanceEngineering"><img alt="YouTube" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" height="25"></a>
   <a href="https://www.meetup.com/ai-performance-engineering/"><img alt="Meetup" src="https://img.shields.io/badge/Meetup-F64060?style=for-the-badge&logo=meetup&logoColor=white" height="25"></a>
-  <a href="https://aws.amazon.com/blogs/opensource/author/chris-fregly/"><img alt="AWS articles" src="https://img.shields.io/badge/AWS%20articles-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" height="25"></a>
   <a href="https://x.com/cfregly"><img alt="X" src="https://img.shields.io/badge/X-111111?style=for-the-badge&logo=x&logoColor=white" height="25"></a>
 </p>
 
@@ -26,7 +25,6 @@ I build and explain AI systems, from GPU kernels and distributed training to inf
 - [Generative AI on AWS](https://www.oreilly.com/library/view/generative-ai-on/9781098159214/): Co-authored with Antje Barth. [Browse the code](https://github.com/generative-ai-on-aws/generative-ai-on-aws).
 - [Data Science on AWS](https://www.oreilly.com/library/view/data-science-on/9781492079385/): Co-authored with Antje Barth. [Browse the code](https://github.com/data-science-on-aws/data-science-on-aws).
 - [Generative AI with Large Language Models](https://www.deeplearning.ai/courses/generative-ai-with-llms/): The DeepLearning.AI course I co-teach. [See the course on fregly.com](https://fregly.com/#course).
-- [AWS articles](https://aws.amazon.com/blogs/opensource/author/chris-fregly/): Selected writing on open source AI and machine learning.
 
 ### Talks and community
 
